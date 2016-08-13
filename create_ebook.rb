@@ -15,4 +15,4 @@ epub_book = EpubBook.new(url) do |book|
   book.body_css = '.wrapper #content'
 end
 
-epub_book.generate_book(book_nam)
+epub_book.generate_book(book_name)
