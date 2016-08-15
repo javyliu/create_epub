@@ -17,4 +17,4 @@ end
 
 epub_book.generate_book(book_name)
 
-system("scp #{book_name}.epub oswap@211.151.99.93:/data3/web_apps/web_games/public/epubs/")
+#system("scp #{book_name}.epub oswap@211.151.99.93:/data3/web_apps/web_games/public/epubs/")

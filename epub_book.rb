@@ -85,7 +85,6 @@ class EpubBook
     @title = doc.css(@title_css).text.strip
     if @cover_css
       cover_url = doc.css(@cover_css).attr("src").to_s
-      puts cover_url
       cover_url = link_host + cover_url unless cover_url.start_with?("http")
       system("curl #{cover_url} -o #{File.join(@book_path,@cover)} ")
     end
@@ -101,7 +100,6 @@ class EpubBook
         _href = link_host + _href
       end
 
-      puts _href
       doc_file = Nokogiri::HTML(open(_href,"User-Agent" => @user_agent,'Referer'=> @referer).read) rescue( puts($!.to_s) and next)
 
 

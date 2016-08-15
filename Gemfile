@@ -8,4 +8,5 @@ gem 'eeepub'
 gem 'zip-zip'
 
 gem 'pry'
+gem 'pry-doc'
 
